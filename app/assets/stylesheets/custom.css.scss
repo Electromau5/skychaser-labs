@@ -1,0 +1,67 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.back-top-top {
+    position:relative;
+}
+
+.btm-right {
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index: 1;
+}
+
+.core-web-features
+{
+	font-family: 'Lato-Medium', sans-serif;
+	text-align: center;
+	margin-top: -12px;
+}
+
+.hideme
+{
+	//opacity: 0;
+}
+
+.modal-title
+{
+	font-family: 'Lato-Medium', sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+ul.lower_greek 
+{
+	list-style-type: cjk-ideographic;
+}
+
+.web-services > img
+{
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.web-services-text
+{
+	font-family: 'Lato-Light', sans-serif;
+	font-size: 20px;
+}
+
+.who-we-are > img
+{
+	width: 85%;
+	height: 85%;
+	margin-top: -20px;
+	margin-left: 20px;
+}
+
+.who-we-are > a > img
+{
+	width: 85%;
+	height: 85%;
+	margin-top: -20px;
+	margin-left: 20px;
+}
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Skychaser Labs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" id="skychaser-logo" href="#" >SKYCHASER LABS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'About Us', "#about", class: "navbar-brand" %></li>
+        <li><%= link_to 'Services', '#services', class: "navbar-brand" %></li>
+        <li><%= link_to 'Portfolio', '#portfolio', class: "navbar-brand" %></li>
+        <li><%= link_to 'Work with us', '#contact', class: "navbar-brand" %></li>
+        <li><%= link_to 'Blog', 'https://entrenetweb.wordpress.com/', target: '_blank', class: "navbar-brand" %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="back-to-top">
+    <%= link_to 'Back to Top', '#skychaser-logo', class: 'btn btn-danger btn-lg btm-right' %>
+</div>
+<div class="jumbotron">Test-1</div>
+<div class="jumbotron">Test-1</div>
+<div class="jumbotron">Test-1</div>
+<div class="jumbotron">Test-1</div>
+<h2 id="about" style="text-align:center">ABOUT US</h2>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are">
+                        <%= image_tag('who.png') %>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2 class="hideme">WHO WE ARE</h2>
+                    <p class="hideme">We are a team of engineers, designers and sales consultants who are driven to build exceptional websites and deliver effective sales strategies for up and coming startups and businesses. Our philosophy is centered around building products that embrace what the businesses stand for and delivering strategies that will guarantee business growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="background-color: #">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2>WHAT WE DO</h2>
+                    <p>Our primary services are in website development and sales. We get an in depth understanding of your business needs and build an effective website that showcases your business / brand objectives. Based on our analysis of your business, we will also formulate a detailed sales strategy that you can put into effect immediately.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are hideme">
+                        <%= image_tag('what.png') %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="background-color: #">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are">
+                        <%= image_tag('why.png') %>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2>WHY US</h2>
+                    <p>We will treat your business as a premium brand and every premium brand is unique. Perfection is at the center of everything we build. We will never deliver a product that comprimises on any aspect of tech, design or functionality. For our sales services our business analysts will study your business model in detail including your past performance and future projections and craft a sales strategy that directly correlates to your current objectives.</p>
+                </div>
+            </div>
+                </div>
+    </div>
+<h2 id="services" style="text-align:center">OUR SERVICES</h2>
+    <div class="container">
+               <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="jumbotron">
+                    <h2>Website Development</h2>
+                    <p>We build websites for new businesses and startups.</p>
+                    <%= link_to 'Learn More', '#', :class => "btn btn-primary",  "data-toggle" => "modal", "data-target" => "#web" %>
+                
+                <!-- Web Development Modal -->
+                    <div id="web" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                <!-- Web Development Modal Content-->
+                            <div class="modal-content" style="background-color:#bfbfbf">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">WEB DEVELOPMENT FOR NEW BUSINESSES AND STARTUPS</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="jumbotron">
+                                    <div class="web-services"><%= image_tag('web.png') %></div>
+                                        <p class ="web-services-text" style="font-size: 18px">We strive to build effective websites for startups and small businesses. Our websites are built with Ruby on Rails and function more like web applications rather than conventional sites. Our philosophy is that functionality is a product of great tech and great design. In addition to providing a website with flawless performance our unique designs and layouts are engineered with exceptional user experience. </p>
+                                    </div>
+                                    <div class="jumbotron" style="height: 5px">
+                                        <h3 class="core-web-features">CORE WEBSITE FEATURES</h3>
+                                    </div>
+                                    <div class="jumbotron" style="margin-top: -25px">
+                                        <ul class="lower_greek">
+                                            <li>Built in CMS so the business can effectively edit text and images.</li>
+                                            <li>Admin account panel accessible only by the business.</li>
+                                            <li>Responsive design for all mobile devices and tablets.</li>
+                                            <li>Dynamic elements to enhance the existing user experience.</li>
+                                            <li>Bootstrap enabled design.</li>
+                                            <li>Social Media Integration including like and share buttons for all major social platforms.</li>
+                                            <li>Google Analytics integrated into the code for traffic reporting and breakdown.</li>
+                                            <li>Maximum of 10 pages based on the business requirements (option to increase pages for additional costs).</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                <div class="jumbotron">
+                    <h2>Sales Strategies</h2>
+                    <p>All work and no play makes Jack a meth addict.</p>
+                    <%= link_to 'Learn More', '#', :class => "btn btn-primary",  "data-toggle" => "modal", "data-target" => "#sales" %>
+                
+                <!-- Sales Modal -->
+                    <div id="sales" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                <!-- Sales Modal Content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="jumbotron">
+                    <h2>Content writing</h2>
+                    <p>We provide optimized content for blogs and websites.</p>
+                    <%= link_to 'Learn More', '#', :class => "btn btn-primary",  "data-toggle" => "modal", "data-target" => "#content" %>
+                
+                <!-- Web Development Modal -->
+                    <div id="content" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                <!-- Web Development Modal Content-->
+                            <div class="modal-content" style="background-color:#bfbfbf">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">CONTENT WRITING</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="jumbotron">
+                                    <div class="web-services"><%= image_tag('content-writing.png') %></div>
+                                        <p class ="web-services-text" style="font-size: 18px">We provide content writing services for brands and businesses. Our content will not only be keyword optimized, but will be targeted to the right audience for building an online reputation for a brand or business.</p>
+                                    </div>
+                                    <div class="jumbotron" style="height: 5px">
+                                        <h3 class="core-web-features">CONTENT SERVICES</h3>
+                                    </div>
+                                    <div class="jumbotron" style="margin-top: -25px">
+                                        <ul class="lower_greek">
+                                            <li>SEO optimized articles about the brand.</li>
+                                            <li>Content for blogs, social networks as well as websites.</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 id="portfolio" style="text-align:center">PORTFOLIO</h2>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are">
+                        <%= link_to image_tag('wmt.png'), "http://www.wheresmytee.com/", target: '_blank' %>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2><%= link_to "WHERE'S MY TEE?","http://www.wheresmytee.com/", target: '_blank' %></h2>
+                    <p>We've built a T-Shirt engine called 'Where's My Tee?'. The website combines elements of social networking and ecommerce to create an unique experience for users looking for the right T-Shirt. Brands can create accounts and upload their products. Active users can save a T-Shirt to their own personal catalogue as well as follow brands to get notifications on new products.</p>
+                    <%= link_to 'Access Site', "http://www.wheresmytee.com/", target: '_blank', class: "btn btn-primary btn-lg" %>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="background-color: #">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are">
+                        <%= link_to image_tag('felix.png'), "http://www.felixcalis.com/", target: '_blank' %>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2><%= link_to "PHOTOGRAPHY PORTFOLIO","http://www.felixcalis.com/", target: '_blank' %></h2>
+                    <p>We were contracted by a professional photogpraher to build a portfolio website for his personal brand. The style is minimal with the central emphasis on his work. The photographer can edit and delete his work any time.</p>
+                    <%= link_to 'Access Site', "http://www.felixcalis.com/", target: '_blank', class: "btn btn-primary btn-lg" %>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="background-color: #">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are">
+                        <%= link_to image_tag('vg.png'), "http://www.vaibhavgupta.co.uk/", target: '_blank' %>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2><%= link_to "CREATIVE PORTFOLIO","http://www.vaibhavgupta.co.uk/", target: '_blank' %></h2>
+                    <p>We designed and developed a website for a creative professional. The main objective of this website was to showcase his work in multiple areas such as UX, game development and animation. We made the site extremely interactive so users could gain a deep insight into his work.</p>
+                    <%= link_to 'Access Site', "http://www.vaibhavgupta.co.uk/", target: '_blank', class: "btn btn-primary btn-lg" %>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="background-color: #">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="who-we-are">
+                        <%= link_to image_tag('crk.png'), "http://www.crkannan.com/", target: '_blank' %>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 col-lg-8">
+                    <h2><%= link_to "BRAND CONSULTANCY","http://www.crkannan.com/", target: '_blank' %></h2>
+                    <p>We designed and developed a website for a brand consultant. The client requested a site that would take his years of experience as a branding and marketing professional and display them through a digital platform.</p>
+                    <%= link_to 'Access Site', "http://www.crkannan.com/", target: '_blank', class: "btn btn-primary btn-lg" %>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="jumbotron">
+    <h2 id="contact" style="text-align:center">CONTACT US</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Name:</label>
+                <input type="email" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Website (if applicable)</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Service required</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+    </body>
+</html>
