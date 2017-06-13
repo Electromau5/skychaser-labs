@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   root 'pages#landing'
   get 'pages/webapp'
   get 'pages/test'
+
+  resources :contacts, only: [:new, :create]
+    get 'contactsindex', to: 'contacts#index'
+  #  get 'thankyou', to: 'pages#thankyou'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

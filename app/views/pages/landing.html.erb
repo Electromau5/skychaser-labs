@@ -18,7 +18,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" id="skychaser-logo" href="#" >SKYCHASER LABS</a>
+      <a class="navbar-brand" id="skychaser-logo"><%= link_to 'SKYCHASER LABS', root_path %></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -257,26 +257,7 @@
     </div>
 <div class="container">
     <div class="jumbotron">
-    <h2 id="contact" style="text-align:center">CONTACT US</h2>
-        <form>
-            <div class="form-group">
-                <label for="email">Name:</label>
-                <input type="email" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Website (if applicable)</label>
-                <input type="password" class="form-control" id="pwd">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Service required</label>
-                <input type="password" class="form-control" id="pwd">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+        <h2 id="contact"><%= link_to 'CONTACT US', new_contact_path, class: 'btn btn-primary btn-lg', target: '_blank'  %></h2>
     </div>
 </div>
     </body>

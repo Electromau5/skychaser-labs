@@ -1,0 +1,26 @@
+<%= render 'pages/header' %>
+<h2 style="text-align:center">POTENTIAL CLIENTS</h2>
+<table class="table table-striped table-bordered">
+  <tr>
+    <th class="center">Company Name</th>
+    <th class="center">Company Website</th>
+    <th class="center">Contact Name</th>
+    <th class="center">Designation</th>
+    <th class="center">Contact Number</th>
+    <th class="center">Contact Email</th>
+    <th class="center">Company Description</th>
+    <th class="center">Service Required</th>
+  </tr>
+<% @contact.each do |c| %>
+  <tr>
+    <td><%= c.company %></td>
+    <td><%= link_to  c.website, c.website, target: '_blank' %></td>
+    <td><%= c.name  %></td>
+    <td><%= c.designation  %></td>
+    <td><%= c.contact_number %></td>
+    <td><%= c.email %></td>
+    <td><%= c.description %></td>
+    <td><%= c.service_required %></td>
+  </tr>
+<% end %>
+</table>

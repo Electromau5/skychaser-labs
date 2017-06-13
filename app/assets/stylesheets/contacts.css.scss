@@ -1,0 +1,103 @@
+.btn-submit
+{
+    display: inline-block;
+    margin-top: 1px;
+    //margin-left: -14px;
+    font-weight: normal;
+    vertical-align: middle;
+    touch-action: manipulation;
+    background-image: none;
+    border: none;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    //border-radius: 4px;
+    user-select: none;
+    width: 250px;
+    padding: 15px;
+    color: #fff;
+    background-color: #05BCD2;
+    border-color: #2e6da4;
+}
+
+.container-signup
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 400px;
+    border: 1px solid #fff;
+    margin-top: 0.5%;
+    padding-top: 33px;
+    background-color: #fff;
+}
+
+.container-welcome-text
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 400px;
+    border: 1px solid #fff;
+    margin-top: 5%;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.form-control
+{
+    margin-left: 9%;
+    width: 80%!important;
+
+}
+
+.input-your-details
+{
+    text-align: center;
+    font-family: 'Lato-Medium', sans-serif;
+}
+
+label
+{
+    margin-left: 9%;
+}
+
+.message-to-clients
+{
+    text-align: center;
+    font-family: 'Raleway-Light', sans-serif;
+}
+
+.signup-bg
+{
+   background-color: #7af1ff;
+   margin-top: -5px;
+   width: 100%;
+   background-size: cover;
+   overflow: hidden;
+   position: relative;
+   overflow-y: visible;
+}
+
+.sign-up-subheader
+{
+    text-align: center;
+    font-family: 'Raleway-Light', sans-serif;
+}
+
+.submit
+{
+    text-align: center;
+}
+
+.welcome-text-user
+{
+    text-align: center;
+    font-family: 'Raleway-Medium', sans-serif;
+    margin-top: -10px;
+}
+

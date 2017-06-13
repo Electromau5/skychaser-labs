@@ -1,0 +1,53 @@
+<%= render 'pages/header' %>
+<div class="container-welcome-text">
+    <h2 class="welcome-text-user">Input your details</h1>
+    <h4 class="sign-up-subheader"></h4>
+</div>
+<body class="signup-bg">
+  <div class="container-signup">
+  <%= form_for(@contact, :html => { class: "form-horizontal", role: "form" }) do |c| %>
+    <div class = "row">
+      <div class = "col-xs-12 col-sm-12">
+        <div class="form-group">
+          <%= c.label :company, 'Company Name' %>
+          <%= c.text_field :company, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :website, "Company Website (if applicable)" %>
+          <%= c.text_field :website, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :name, "Contact Name" %>
+          <%= c.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :designation, "Designation" %>
+          <%= c.text_field :designation, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :contact_number, "Contact Number" %>
+          <%= c.text_field :contact_number, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :email, "Contact Email" %>
+          <%= c.email_field :email, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :description, 'Company Description (Max 500 words)' %>
+          <%= c.text_area :description, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= c.label :service_required, 'Service Required (Max 500 words)' %>
+          <%= c.text_area :service_required, class: 'form-control' %>
+        </div>
+      </div>
+    </div>
+    <div class="submit">
+      <%= c.submit "Submit Details", class: 'btn-submit' %>
+    </div>
+  <% end %><br />
+</div>
+</body><br>
+
+
+
