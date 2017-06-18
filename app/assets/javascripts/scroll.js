@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('.hideme').each( function(i){
+        $('.p-text h2-text').each( function(i){
             
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();

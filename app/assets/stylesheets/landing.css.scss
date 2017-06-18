@@ -1,0 +1,17 @@
+.banner
+{
+	height: 400px;
+	background-image: url(banner.png);
+	background-position: 0% 55%;
+	background-size: cover;
+	background-repeat: no-repeat;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
