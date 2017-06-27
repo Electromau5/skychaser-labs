@@ -1,12 +1,92 @@
 .banner
 {
-	height: 400px;
-	background-image: url(banner.png);
-	background-position: 0% 55%;
-	background-size: cover;
-	background-repeat: no-repeat;
+  height: 400px;
+  background-image: url(banner-images/banner-7.jpg);
+  background-position: 0% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 48px;
   padding-bottom: 48px;
   margin-bottom: 30px;
   margin-top: -19px;
+}
+
+.banner-b
+{
+  height: 400px;
+  background-position: 0% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 30px;
+  margin-top: -48px;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.banner-text
+{
+	background-color: #222222;
+	width: 80%;
+	margin-left: 10%;
+	opacity: 0.6;
+	animation:mymove 6s;
+	-webkit-animation:mymove 6s;
+	-moz-animation:mymove 6s;
+	-o-animation:mymove 6s;
+}
+
+
+@keyframes mymove
+{ 
+	from {	
+			width: 50%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 80%;
+			opacity: 0.6; 
+		}
+}
+
+@-webkit-keyframes mymove
+{ 
+	from {	
+			width: 40%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 50%;
+			opacity: 1; 
+		}
+}
+
+@-moz-keyframes mymove
+{ 
+	from {	
+			width: 40%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 50%;
+			opacity: 1; 
+		}
+}
+
+@-o-keyframes mymove
+{ 
+	from {	
+			width: 40%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 50%;
+			opacity: 1; 
+		}
+}
+
+.core-web-features-sub-header
+{
+	text-align: center;
 }
