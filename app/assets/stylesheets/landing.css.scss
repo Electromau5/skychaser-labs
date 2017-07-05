@@ -25,18 +25,83 @@
   opacity: 0.5;
 }
 
-.banner-text
+.banner-b1
 {
 	background-color: #222222;
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
+	//margin-left: 10%;
 	opacity: 0.6;
-	animation:mymove 6s;
-	-webkit-animation:mymove 6s;
-	-moz-animation:mymove 6s;
-	-o-animation:mymove 6s;
+	animation:mymove 2s;
+	-webkit-animation:mymove 3s;
+	-moz-animation:mymove 3s;
+	-o-animation:mymove 3s;
+	height: 70px;
+	margin-top: 120px;
+	opacity: 0.7;
 }
 
+
+.banner-text
+{
+	text-align:center; 
+	color: #fff;  
+	font-family: 'Raleway-Light', sans-serif; 
+	font-size: 40px;
+	margin-top: -55px;
+	animation:bannerops 2s;
+	-webkit-animation:bannerops 3s;
+	-moz-animation:bannerops 3s;
+	-o-animation:bannerops 3s;
+	opacity: 0.6;
+}
+
+@keyframes bannerops
+{ 
+	from {	
+			width: 50%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 100%;
+			opacity: 0.6; 
+		}
+}
+
+@-webkit-keyframes mymove
+{ 
+	from {	
+			width: 50%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 100%;
+			opacity: 0.6; 
+		}
+}
+
+@-moz-keyframes mymove
+{ 
+	from {	
+			width: 50%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 100%;
+			opacity: 0.6; 
+		}
+}
+
+@-o-keyframes mymove
+{ 
+	from {	
+			width: 50%;	
+			opacity: 0;	
+		 }
+	to 	{	
+			width: 100%;
+			opacity: 0.6; 
+		}
+}
 
 @keyframes mymove
 { 
@@ -45,44 +110,44 @@
 			opacity: 0;	
 		 }
 	to 	{	
-			width: 80%;
-			opacity: 0.6; 
+			width: 100%;
+			opacity: 0.7; 
 		}
 }
 
 @-webkit-keyframes mymove
 { 
 	from {	
-			width: 40%;	
+			width: 50%;	
 			opacity: 0;	
 		 }
 	to 	{	
-			width: 50%;
-			opacity: 1; 
+			width: 100%;
+			opacity: 0.7; 
 		}
 }
 
 @-moz-keyframes mymove
 { 
 	from {	
-			width: 40%;	
+			width: 50%;	
 			opacity: 0;	
 		 }
 	to 	{	
-			width: 50%;
-			opacity: 1; 
+			width: 100%;
+			opacity: 0.7; 
 		}
 }
 
 @-o-keyframes mymove
 { 
 	from {	
-			width: 40%;	
+			width: 50%;	
 			opacity: 0;	
 		 }
 	to 	{	
-			width: 50%;
-			opacity: 1; 
+			width: 100%;
+			opacity: 0.7; 
 		}
 }
 

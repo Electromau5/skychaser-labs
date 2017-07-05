@@ -35,9 +35,9 @@
     <%= link_to 'Back to Top', '#skychaser-logo', class: 'btn btn-danger btn-lg btm-right' %>
 </div>
 <div class="banner">
-        <div class="banner-text">
-            <h2 style="text-align:center; color: #fff; font-family: 'Raleway-Light', sans-serif; margin-top: 120px">Web Development + Sales Consulting</h2>
-            <h3 style="text-align:center; color: #fff;  font-family: 'Raleway-Light', sans-serif">Ideate. Build. Deploy</h3>
+        <div>
+            <div class="banner-b1"></div>
+            <h1 class="banner-text">Ideate. Build. Deploy</h1>
         </div>
 </div>
 <h2 id="about" class="landing-sub-header" style="text-align:center">ABOUT US</h2>
@@ -123,13 +123,8 @@
                                                     <p style="font-size:18px">This admin panel will only be accessible to you as our client. Here you can edit your content including your meta information for Search Engine Optimization.</p>
                                                 </div>
                                                 <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
-                                                     <div class="site-f-image"><%= image_tag('site-features/arrow.png') %></div>
-                                                    <h3 class="core-web-features-sub-header">Fast Production</h3>
-                                                    <p style="font-size:18px">Our development time typically ranges between 2 days - 1 week. It varies depending on the complexity of the site. But our primary objective is to build a high standard product and launch it quickly so you can promote your brand.</p>
-                                                </div>
-                                                <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
                                                      <div class="site-f-image"><%= image_tag('site-features/seo.png') %></div>
-                                                    <h3 class="core-web-features-sub-header">SEO driven content</h3>
+                                                    <h3 class="core-web-features-sub-header">SEO tools</h3>
                                                     <p style="font-size:18px">We provide you the tools to edit all your meta information including your titles, descriptions and keywords for all relevant pages.</p>
                                                 </div>
                                                 <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
@@ -147,7 +142,12 @@
                                                     <h3 class="core-web-features-sub-header">Responsive Design with Interactive UX</h3>
                                                     <p style="font-size:18px">We place special emphasis on making sure your site is accessible to users of all devices across a number of resolutions. In addition we add dynamic elements to certain site features to create a more interactive experience for your users.</p>
                                                 </div>
-                                            </div>
+                                                <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+                                                     <div class="site-f-image"><%= image_tag('site-features/arrow.png') %></div>
+                                                    <h3 class="core-web-features-sub-header">Fast Production</h3>
+                                                    <p style="font-size:18px">Our development time typically ranges between 2 days - 1 week. It varies depending on the complexity of the site. But our primary objective is to build a high standard product and launch it quickly so you can promote your brand.</p>
+                                                </div>
+                                             </div>
                                         </ul>
                                     </div>
                                 <div class="modal-footer">
@@ -230,7 +230,7 @@
             <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
                     <div class="jumbotron"  style="border: 1px solid #000; border-radius: 5px">
                     <div class="pencil"><%= image_tag('pencil.png') %></div>
-                    <h2 class="service-header">Content Development</h2>
+                    <h2 class="service-header">Content Strategy</h2>
                     <p class="service-text">We develop content for marketing and advertising.</p>
                     <%= link_to 'Learn More', '#', :class => "btn btn-primary",  "data-toggle" => "modal", "data-target" => "#content" %>
                 
